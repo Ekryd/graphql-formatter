@@ -1,12 +1,12 @@
 package com.ekryd.plugin.graphqlformatter.window;
 
 import com.intellij.codeInsight.hint.HintManager;
+import com.intellij.lang.jsgraphql.GraphQLFileType;
 import com.intellij.openapi.editor.EditorFactory;
 import com.intellij.openapi.editor.LogicalPosition;
 import com.intellij.openapi.editor.ScrollType;
 import com.intellij.openapi.editor.ScrollingModel;
 import com.intellij.openapi.editor.ex.EditorEx;
-import com.intellij.openapi.fileTypes.FileTypes;
 import com.intellij.openapi.project.Project;
 import com.intellij.openapi.util.text.StringUtil;
 import com.intellij.ui.EditorTextField;
@@ -21,12 +21,11 @@ public class GraphQLToolWindow {
   public GraphQLToolWindow() {}
 
   public EditorTextField getContent(@NotNull Project project) {
-    // TODO: Filetype
     editorTextArea =
         new EditorTextField(
             EditorFactory.getInstance().createDocument(StringUtil.convertLineSeparators("")),
             project,
-            FileTypes.UNKNOWN,
+            GraphQLFileType.INSTANCE,
             false,
             false) {
           @Override

@@ -6,6 +6,7 @@
   <vendor url="https://github.com/Ekryd" email="bjorn.ekryd(at)gmail(dot)com">Ekryd</vendor>
 
   <depends>com.intellij.modules.platform</depends>
+  <depends>com.intellij.lang.jsgraphql</depends>
 
   <description><![CDATA[
     An IntelliJ plugin to format, maximize and minimize GraphQL queries and schemas
