@@ -1,13 +1,11 @@
 # graphql-formatter
 
 ![Build](https://github.com/Ekryd/graphql-formatter/workflows/Build/badge.svg)
-[![Version](https://img.shields.io/jetbrains/plugin/v/PLUGIN_ID.svg)](https://plugins.jetbrains.com/plugin/PLUGIN_ID)
-[![Downloads](https://img.shields.io/jetbrains/plugin/d/PLUGIN_ID.svg)](https://plugins.jetbrains.com/plugin/PLUGIN_ID)
+[![Version](https://img.shields.io/jetbrains/plugin/v/21373-graphql-formatter.svg)](https://plugins.jetbrains.com/plugin/PLUGIN_ID)
+[![Downloads](https://img.shields.io/jetbrains/plugin/d/21373-graphql-formatter.svg)](https://plugins.jetbrains.com/plugin/PLUGIN_ID)
 
 ## Template ToDo list
 
-- [ ] [Publish a plugin manually](https://plugins.jetbrains.com/docs/intellij/publishing-plugin.html?from=IJPluginTemplate)
-  for the first time.
 - [ ] Set the `PLUGIN_ID` in the above README badges.
 - [ ] Set
   the [Plugin Signing](https://plugins.jetbrains.com/docs/intellij/plugin-signing.html?from=IJPluginTemplate)
@@ -18,20 +16,22 @@
 <!-- Plugin description -->
 An IntelliJ plugin to format, maximize and minimize GraphQL queries and schemas.
 
-![screen recording](./misc/screen-recording.gif)
+![Screen Recording](./misc/screen-formatting.gif)
 
 The plugin can format both GraphQL queries and GraphQL schemas. Open the plugin tool window and
 paste the text that you want to format.
 
 The following operations can be performed:
 
-* Collapse text to a minimized format without comments, documentation or whitespace
-* Expand text to a structured format preserving comments and documentation
-* Compress GraphQL queries to a format where leaves of the query types are placed on the same line
+* **Collapse** text to a minimized format without comments, documentation or whitespace.
+* **Expand** text to a structured format preserving comments and documentation.
+* **Compress GraphQL queries** to a format where leaves of the query types are placed on the same line
   and all end braces are placed on the same line. This is useful when you want to use queries in
   tests; to have an overview of the query, but preserve the number of lines used. Compressing a
   GraphQL schema will just expand it.
-* Verify GraphQL to check if the syntax is valid.
+* **Verify** GraphQL to check if the query or schema is syntactically valid.
+
+![Compressing Query](./misc/screen-compressing.gif)
 
 <!-- Plugin description end -->
 
@@ -56,3 +56,9 @@ Plugin based on the [IntelliJ Platform Plugin Template][template].
 [template]: https://github.com/JetBrains/intellij-platform-plugin-template
 
 [docs:plugin-description]: https://plugins.jetbrains.com/docs/intellij/plugin-user-experience.html#plugin-description-and-presentation
+
+# Acknowledgement
+
+A big 'Thank you' to Jiaxing Zhang for the inspiring [JSON Formatter plugin](https://plugins.jetbrains.com/plugin/13931-json-formatter).
+
+Thanks to IntelliJ for the thorough documentation around building plugins.  
