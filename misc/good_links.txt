@@ -1,0 +1,12 @@
+Useful when creating project
+https://github.com/chocolate213/json-formatter
+https://plugins.jetbrains.com/plugin/13931-json-formatter
+https://www.youtube.com/watch?v=-6D5-xEaYig&t=230s
+https://graphql.org/brand/
+https://plugins.jetbrains.com/docs/intellij/plugins-quick-start.html
+https://plugins.jetbrains.com/plugin/21373-graphql-formatter
+https://www.xconvert.com/convert-mov-to-gif
+https://intellij-support.jetbrains.com/hc/en-us/community/posts/360000038750-Can-t-find-tests-JUnit-5-
+https://github.com/magento/magento2-phpstorm-plugin/search?q=jsgraphql
+https://www.softr.io/tools/svg-shape-generator
+https://plugins.jetbrains.com/intellij-platform-explorer/extensions
