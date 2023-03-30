@@ -1,0 +1,31 @@
+{
+  player(query: "madonna", limit: 2) {
+    work {
+      items {
+data {
+  ... on Player {             profile {               name
+ }
+            stats {         followers
+              goals   }
+            
+            matches {
+           match(limit: 5) {
+                items {
+            releases {
+                    items {
+                  popularity
+                       name
+                      breaks(limit: 3) {
+                        items {
+                  break {
+      name
+      work {
+        items {
+    profile {
+            name
+          }
+        }
+      }    }}          }        }      }    }  }
+}
+          }        }      }    }  }
+}

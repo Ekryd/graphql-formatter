@@ -1,0 +1,172 @@
+query something($timeZone: String!) {
+  something(input: {dimension : TWO_DIMENSION, clientTimeZone : $timeZone, integration : UNKNOWN, experience : EXPERIENCE_UNSPECIFIED}) {
+    __typename
+    ... on SomethingResponsePayload {
+      greeting { ...somethingDisplayText }
+      sectionContainer {
+        key
+        sections(offset: 0, limit: 20) {
+          items { ...somethingSection }
+          totalCount
+}}}}}
+
+fragment somethingDisplayText on SomethingFeatureDisplayText { text: transformedLabel }
+
+fragment somethingSection on SomethingSection {
+  key
+  data {
+    __typename
+    ... on SomethingGenericSectionData {
+      title { ...somethingDisplayText }
+    }
+    ... on SomethingLong {
+      __typename
+      title { ...somethingDisplayText }
+    }
+    ... on SomethingShort { __typename }
+    ... on SomethingGood {
+      title { ...somethingDisplayText }
+    }
+    ... on SomethingElse {
+      title { ...somethingDisplayText }
+  }}
+  sectionItems(offset: 0, limit: 10) {
+    items { ...somethingItem }
+    totalCount
+}}
+
+fragment somethingItem on SomethingItem {
+  key
+  content {
+    __typename
+    ... on AnimalResponseWrapper {
+      data { __typename ...somethingAnimal }
+    }
+    ... on SnakeResponseWrapper {
+      data { __typename ...somethingSnake }
+    }
+    ... on MammalResponseWrapper {
+      data { __typename ...somethingDog ...somethingCat }
+    }
+    ... on FishResponseWrapper {
+      data { __typename ...somethingFish }
+    }
+    ... on TreeResponseWrapper {
+      data { __typename ...somethingLumber ...somethingBamboo }
+    }
+    ... on HumanResponseWrapper {
+      data { __typename ...somethingHuman }
+    }
+    ... on FlowerResponseWrapper {
+      data { __typename ...somethingFlower }
+    }
+    ... on UnknownType { key }
+  }
+  data { __typename }
+}
+
+fragment somethingAnimal on Animal {
+  key
+  name
+  image { ...somethingImage }
+  work(limit: 4) {
+    items {
+      key
+      profile { name }
+}}}
+
+fragment somethingImage on Image {
+  arts { url width height }
+  quality {
+    light { hex isFallback }
+}}
+
+fragment somethingSnake on Player {
+  key
+  profile { name }
+  visuals {
+    image { ...somethingImage }
+}}
+
+fragment somethingDog on Dog {
+  key
+  name
+  image { ...somethingImage }
+  description
+  tall { cm }
+  birth { isoString }
+  mood { petted state }
+  stick {
+    data { __typename ...somethingLumber }
+  }
+  rating { label }
+}
+
+fragment somethingLumber on Lumber {
+  key
+  name
+  image { ...somethingImage }
+  farmer { name }
+  type
+}
+
+fragment somethingCat on Cat {
+  key
+  name
+  image { ...somethingImage }
+  description
+  tall { cm }
+  birth { isoString }
+  mood { petted state }
+  rating { label }
+  scratchPole {
+    data {
+      __typename
+      ... on Bamboo {
+        key
+        name
+        farmers { name }
+        image { ...somethingImage }
+}}}}
+
+fragment somethingFish on Fish {
+  key
+  name
+  images {
+    items { ...somethingImage }
+  }
+  description
+  owner {
+    data {
+      __typename
+      ... on Flower { name }
+}}}
+
+fragment somethingBamboo on Bamboo {
+  key
+  name
+  image { ...somethingImage }
+  farmers { name }
+}
+
+fragment somethingHuman on Human {
+  key
+  name
+  friends {
+    key
+    name
+    image { ...somethingImage }
+  }
+  work(limit: 4) {
+    items {
+      key
+      profile { name }
+  }}
+  rating { label }
+}
+
+fragment somethingFlower on Flower {
+  key
+  name
+  avatar { ...somethingImage }
+}
