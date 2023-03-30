@@ -1,18 +1,20 @@
 <!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
 <idea-plugin>
     <id>com.github.ekryd.graphqlformatter</id>
-    <name>graphql-formatter Template</name>
-    <vendor>ekryd</vendor>
+    <name>GraphQL Formatter
+</name>
+    <vendor url="https://github.com/Ekryd">ekryd</vendor>
 
     <depends>com.intellij.modules.platform</depends>
 
-    <resource-bundle>messages.MyBundle</resource-bundle>
+    <description><![CDATA[
+    An IntelliJ plugin to format, maximize and minimize GraphQL queries and schemas
+  ]]></description>
 
     <extensions defaultExtensionNs="com.intellij">
-        <toolWindow factoryClass="com.github.ekryd.graphqlformatter.toolWindow.MyToolWindowFactory" id="MyToolWindow"/>
+        <toolWindow id="GraphQL Formatter" secondary="true" icon="AllIcons.Actions.Expandall" anchor="right"
+                factoryClass="com.ekryd.plugin.graphqlformatter.window.GraphQLToolWindowFactory"
+/>
     </extensions>
 
-    <applicationListeners>
-        <listener class="com.github.ekryd.graphqlformatter.listeners.MyFrameStateListener" topic="com.intellij.ide.FrameStateListener"/>
-    </applicationListeners>
 </idea-plugin>
