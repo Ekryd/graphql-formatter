@@ -1,8 +1,8 @@
 <!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
 <idea-plugin>
     <id>com.github.ekryd.graphqlformatter</id>
-    <name>graphql-formatter Template</name>
-    <vendor>ekryd</vendor>
+    <name>GraphQL Formatter</name>
+    <vendor url="https://github.com/Ekryd">ekryd</vendor>
 
     <depends>com.intellij.modules.platform</depends>
 

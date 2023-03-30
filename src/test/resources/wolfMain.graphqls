@@ -1,0 +1,70 @@
+"scary stuff"
+directive @supernatural(scary: Boolean = true) on FIELD_DEFINITION
+scalar _FieldSet
+directive @key(fields: _FieldSet!) repeatable on OBJECT | INTERFACE
+
+"""
+Multi-line
+on type
+"""
+type Query {
+  # Number of days
+  # before a person turns to werewolf
+  daysToTurn: Int
+  # Return person
+    me: Person
+    fullMoon(moonPhase: MoonRequest): Werewolf    @supernatural(scary: true)
+}
+
+input MoonRequest {
+    full: Boolean
+}
+
+# The sound file of a howl
+scalar Howl
+
+union Werewolf = Person | Wolf
+
+interface Animal {
+    doesHowl: Boolean
+}
+
+type Wolf @key(fields: "tag") {
+    doesHowl: Boolean
+    howl: Howl
+  tag: String
+}
+
+type Person @key(fields: "name") {
+   traits: KindType
+    name: String
+}
+
+enum KindType {
+    KIND
+    SAD
+  """
+  enum value
+  multi-line
+  """
+    ANGRY
+}
+
+"Mutation"
+type Mutation {
+  bite(victim: Victim): Werewolf @supernatural
+}
+
+"input"
+input Victim {
+  "input field"
+  traits: KindType
+}
+
+"""
+Random 
+subscription
+"""
+type Subscription {
+  monthlyWerewolf: Werewolf
+}
