@@ -16,8 +16,6 @@
 <!-- Plugin description -->
 An IntelliJ plugin to format, maximize and minimize GraphQL queries and schemas.
 
-![Screen Recording](./misc/screen-formatting.gif)
-
 The plugin can format both GraphQL queries and GraphQL schemas. Open the plugin tool window and
 paste the text that you want to format.
 
@@ -31,9 +29,13 @@ The following operations can be performed:
   GraphQL schema will just expand it.
 * **Verify** GraphQL to check if the query or schema is syntactically valid.
 
-![Compressing Query](./misc/screen-compressing.gif)
-
 <!-- Plugin description end -->
+
+### Screenshots
+
+![Screen Recording](./misc/screen-formatting.gif)
+
+![Compressing Query](./misc/screen-compressing.gif)
 
 ## Installation
 
