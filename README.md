@@ -1,8 +1,8 @@
 # graphql-formatter
 
 ![Build](https://github.com/Ekryd/graphql-formatter/workflows/Build/badge.svg)
-[![Version](https://img.shields.io/jetbrains/plugin/v/21373-graphql-formatter.svg)](https://plugins.jetbrains.com/plugin/PLUGIN_ID)
-[![Downloads](https://img.shields.io/jetbrains/plugin/d/21373-graphql-formatter.svg)](https://plugins.jetbrains.com/plugin/PLUGIN_ID)
+[![Version](https://img.shields.io/jetbrains/plugin/v/21373-graphql-formatter.svg)](https://plugins.jetbrains.com/plugin/21373-graphql-formatter.svg)
+[![Downloads](https://img.shields.io/jetbrains/plugin/d/21373-graphql-formatter.svg)](https://plugins.jetbrains.com/plugin/21373-graphql-formatter.svg)
 
 ## Template ToDo list
 
