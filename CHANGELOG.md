@@ -20,6 +20,5 @@
 - Inspiration from [JSON Formatter](https://plugins.jetbrains.com/plugin/13931-json-formatter)
 - Support for extending, collapsing, compressing and verifying GraphQL
 
-### Added
-- Initial scaffold created from [IntelliJ Platform Plugin Template](https://github.com/JetBrains/intellij-platform-plugin-template)
-
+[Unreleased]: https://github.com/Ekryd/graphql-formatter/commits/0.0.2...HEAD
+[0.0.2]: https://github.com/Ekryd/graphql-formatter/commits/0.0.2
