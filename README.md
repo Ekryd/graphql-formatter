@@ -4,15 +4,7 @@
 [![Version](https://img.shields.io/jetbrains/plugin/v/21373-graphql-formatter.svg)](https://plugins.jetbrains.com/plugin/21373-graphql-formatter.svg)
 [![Downloads](https://img.shields.io/jetbrains/plugin/d/21373-graphql-formatter.svg)](https://plugins.jetbrains.com/plugin/21373-graphql-formatter.svg)
 
-## Template ToDo list
-
-- [ ] Set the `PLUGIN_ID` in the above README badges.
-- [ ] Set
-  the [Plugin Signing](https://plugins.jetbrains.com/docs/intellij/plugin-signing.html?from=IJPluginTemplate)
-  related [secrets](https://github.com/JetBrains/intellij-platform-plugin-template#environment-variables).
-- [ ] Set
-  the [Deployment Token](https://plugins.jetbrains.com/docs/marketplace/plugin-upload.html?from=IJPluginTemplate).
-
+## Plugin description
 <!-- Plugin description -->
 An IntelliJ plugin to format, maximize and minimize GraphQL queries and schemas.
 
