@@ -18,7 +18,7 @@ plugins {
     // Gradle Kover Plugin
     id("org.jetbrains.kotlinx.kover") version "0.7.0"
 
-    id("com.diffplug.spotless") version "6.18.0"
+    id("com.diffplug.spotless") version "6.19.0"
 }
 
 group = properties("pluginGroup").get()
