@@ -30,7 +30,7 @@ repositories {
 }
 
 dependencies {
-	implementation("com.graphql-java:graphql-java:20.3")
+	implementation("com.graphql-java:graphql-java:20.4")
     testImplementation("org.junit.jupiter:junit-jupiter-api:5.9.3")
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:5.9.3")
     // To run tests directly under IntelliJ   
