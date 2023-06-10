@@ -8,7 +8,7 @@ plugins {
     // Java support
     id("java")
     // Kotlin support
-    id("org.jetbrains.kotlin.jvm") version "1.8.21"
+    id("org.jetbrains.kotlin.jvm") version "1.8.22"
     // Gradle IntelliJ Plugin
     id("org.jetbrains.intellij") version "1.14.0"
     // Gradle Changelog Plugin
@@ -30,7 +30,7 @@ repositories {
 }
 
 dependencies {
-	implementation("com.graphql-java:graphql-java:20.3")
+	implementation("com.graphql-java:graphql-java:20.4")
     testImplementation("org.junit.jupiter:junit-jupiter-api:5.9.3")
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:5.9.3")
     // To run tests directly under IntelliJ   
